@@ -17,12 +17,11 @@ function App() {
       alert('Please enter a prompt to begin your TinyTale.');
       return;
     }
-    // For now, we just simulate generation. Backend endpoints will be added later.
-    alert(`Generating a flipbook for: "${prompt}"`);
+    alert(`Generating a colorful flipbook for: "${prompt}"`);
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#FFF3C4] via-white to-[#C2F0F7]">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_20%_0%,#FFE2F7,transparent_55%),radial-gradient(circle_at_80%_10%,#FFF1C2,transparent_60%),radial-gradient(circle_at_10%_80%,#CFF3FF,transparent_55%),radial-gradient(circle_at_90%_85%,#E7FFE4,transparent_60%)]">
       <HeroCover onGetStarted={handleGetStarted} />
 
       <div id="prompt-panel" className="px-4 sm:px-6">
